@@ -23,3 +23,18 @@ VALUES(10002,  'James', 'New York',202);
 INSERT INTO STUDENT (ID, NAME, LOCATION,PASSPORT_ID) 
 VALUES(10003,  'Pieter', 'Amsterdam',203);
 
+insert into course(id,name,created_date_time,last_updated_date_time)
+values(20001,'Chapter 1',current_timestamp(),current_timestamp());
+insert into course(id,name,created_date_time,last_updated_date_time)
+values(20002,'Chapter 2',current_timestamp(),current_timestamp());
+insert into course(id,name,created_date_time,last_updated_date_time)
+values(20003,'Chapter 3',current_timestamp(),current_timestamp());
+
+
+
+insert into review(id,rating,description,course_id)
+values(50001,'4','My life lession',20001);
+insert into review(id,rating,description,course_id)
+values(50002,'4','My life lession1',20001);
+insert into review(id,rating,description,course_id)
+values(50003,'3','My life lession2 and exp',20003);
