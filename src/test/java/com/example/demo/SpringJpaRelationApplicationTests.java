@@ -61,7 +61,7 @@ class SpringJpaRelationApplicationTests {
 		
 		Passport p=em.find(Passport.class, 202);
 		logger.info("Passport-> {}",p);
-		logger.info("Passpor Studentt-> {}",p.getStudent());
+		logger.info("Passport Studentt-> {}",p.getStudent());
 	}
 	
 	

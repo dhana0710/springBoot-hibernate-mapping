@@ -7,6 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.example.demo.entity.dto.CourseRepository;
 import com.example.demo.entity.dto.StudentRepository;
 
 @SpringBootApplication
@@ -16,7 +17,7 @@ public class SpringJpaRelationApplication implements CommandLineRunner {
 	
 	
 	@Autowired
-	private StudentRepository rep;
+	private CourseRepository rep;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJpaRelationApplication.class, args);
@@ -27,7 +28,7 @@ public class SpringJpaRelationApplication implements CommandLineRunner {
 		// TODO Auto-generated method stub
 		
 		logger.info("{}","Hello");
-		rep.addStudentWithPassport();
+		rep.addReviewWithCourse();
 //		logger.info("oneToOne -> {}",rep.addStudentWithPassport());
 		
 	}
